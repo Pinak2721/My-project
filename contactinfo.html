@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Contact Info</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+				
+				$("#bdy").delay(1000).fadeIn(3000);
+				$("#bdy").css({"background-color":"lightgrey"});
+				
+				function h1(){
+				$("#h1").fadeOut(500);
+				$("#h1").fadeIn(500);
+				
+				}
+				setInterval (h1,1000);
+				
+				$("#cnt").mouseenter(function(){
+				$("#cnt").css({"font-size":"40px","color":"blue"});
+				});
+				
+				$(".p1").mouseenter(function(){
+				$(".p1").css({"font-size":"20px","color":"blue"});
+				});
+		});
+		</script>
+	</head>
+	<body id="bdy" style="display:none">
+		 <br><h1 align="center" id="h1" style="background-color:orange;display:none;"><b>Contact Details</b></h2><br><br>
+		<h2 id="cnt"  >Contact Info</h2><br><br>
+		<p class="p1" style="margin-left:40px">Dr. Ajay D. Parikh<p style="margin-left:55px" class="p1">Head and Dean</p></p><hr>
+		<p style="margin-left:40px">Department of Computer Science<p style="margin-left:55px">Gujarat Vidyapith, Ashram Raod, Ahmedabd-380014 , Gujarat State, India</p></p><hr>
+		<p style="margin-left:40px"><span style="color:blue"> &#128222; &nbsp;079 40016331/326</span></p><hr>
+		<p style="margin-left:40px;" >&#9993;  &nbsp;  hodcs@gujaratvidyapith.org</p>
+		<p><a href="computer science.html">Back..</a></p>
+	</body>
+</html>

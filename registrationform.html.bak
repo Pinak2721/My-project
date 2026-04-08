@@ -1,0 +1,207 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>Admission Registration Form</title>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				
+				$("#bdy").delay(500).fadeIn(2000);
+				function srf(){
+				$("#srf").fadeOut(500);
+				$("#srf").fadeIn(500);
+				
+				}
+				setInterval (srf,1000);
+				
+				$("#inp1").click(function(){
+					alert("Successfull Your Registration");
+				});
+				
+			});
+		</script>
+		</head>
+		<body id="bdy" style="display:none">
+			<table cellspacing="10px" align="center" style="border-radius:20px" bgcolor="skyblue">
+				<form autocomplete="on">
+					<center><h1 style="color:red" id="srf">Student Registration Form</h1></center>
+					<tr>
+						<td>Student Full Name:</td>
+						<td><input type="text" placeholder=" First Name" name="First_Name" /></td>
+						
+						<td><input type="text" placeholder=" Middle Name" name="Middle_Name" /></td>
+						<td><input type="text" placeholder=" Last Name" name="Last_Name"/></td>
+						
+						
+					</tr>
+					
+					<tr>
+						<td>Course:</td>
+						<td><SELECT NAME="COURSE">
+					<option value="MCA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MCA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+					<option value="BCA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BCA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+					<option value="PGDCA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PGDCA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</OPTION>
+					        </SELECT></td>
+					
+					<td>Studying Year:</td>
+					
+					<td>
+						<SELECT NAME="Studying Year">
+					<option value="2015">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+					<option value="2016">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2016&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+					<option value="2017">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</OPTION>
+					<OPTION VALUE="2018">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</OPTION>
+					<OPTION VALUE="2019">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</OPTION>
+					<option value="2020">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2020&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</OPTION>
+					<OPTION selected VALUE="2021">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2021&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</OPTION>
+					<OPTION VALUE="2022">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2022&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</OPTION>
+					</SELECT>
+					
+					</td>
+					
+					</tr>
+					
+					<tr>
+						<td>University/School Name:</td>
+						<td><input type="text" placeholder="University Name"/></td>
+						<td>Date Of Birth:</td>
+						<td><input type="date"/></td>
+					</tr>
+					
+					<tr>
+						<td>Gender:</td>
+						<td>Male<input type="radio" name="1"></td>
+						<td>Female<input type="radio" name="1"></td>
+						<td>Other<input type="radio" name="1"></td>
+						
+						
+					</tr>
+					
+					<tr>
+						<td>Father Name:</td>
+						<td><input type="text" placeholder="Name"/></td>
+						
+					</tr>
+					
+					<tr>
+						<td>Mother Name:</td>
+						<td><input type="text" placeholder="Name"/></td>
+					</tr>
+					
+					<tr>
+						<td>Choose ID Card</td>
+						<td><SELECT>
+					<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aadhaar Card&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+					<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pan Card&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+					<option>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Passport&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</OPTION>
+					<OPTION>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rashan Card&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</OPTION>
+					<OPTION>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Voter ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</OPTION>
+						</select></td>
+					<td>ID Card No.:</td>
+						<td><input type="text" placeholder=" Card Number"/></td>
+					</tr>
+					
+					<tr>
+						<td>Mobile No.:</td>
+						<td><input type="number" Value="+91 " placeholder=" +91 Mobile Number" min="10"/></td>
+						</tr>
+					
+					
+					
+					<tr>
+						<td>E-mail ID:</td>
+						<td><input type="text" placeholder=" xyz@gmail.com" /></td>
+					</tr>
+					
+					<tr>
+						<td>Username:</td>
+						<td><input type="text" placeholder=" Username"/></td>
+						<td>Create Password:</td>
+						<td><input type="password" placeholder=" Password"/></td>
+					</tr>
+					
+						
+
+						<tr>
+							<td colspan="2" style="font-size:25px">Address:-----</td>
+						 </tr>
+						 
+						 <tr>
+							<td>House Number:</td>
+							<td><input type="number"/></td>
+							<td>Village/Area:</td>
+							<td><input type="text" placeholder=" Village/Area" /></td>
+							
+						 </tr>
+						 
+						 <tr>
+							<td>Pin Code:</td>
+							<td><input type="text" placeholder=" Pin Code"/></td>
+						 </tr>
+						 
+						 <tr>
+						 <TD>COUNTRY</TD>
+						 <TD><INPUT TYPE="TEXT" NAME="COUNTRY" VALUE="INDIA" READONLY="READONLY"/></TD>
+							<td>State:</td>
+							<td><SELECT>
+								<option>Andhra Pradesh</option>
+								<option>Arunachal Pradesh</option>
+								<option>Assam</OPTION>
+								<OPTION>Bihar</OPTION>
+								<OPTION>Chhattisgarh</OPTION>
+								<OPTION>New Delhi</OPTION>
+								<option>Goa</option>
+								<option>Gujarat</option>
+								<option>Haryana</OPTION>
+								<OPTION>Himanchal Pradesh</OPTION>
+								<OPTION>Jharkhand</OPTION>
+								<option>Karnataka</option>
+								<option>Kerala</option>
+								<option>Madhya pradesh</OPTION>
+								<OPTION>Maharashtra</OPTION>
+								<OPTION>Manipur</OPTION>
+								<option>Meghalaya</option>
+								<option>Mizoram</option>
+								<option>Nagaland</OPTION>
+								<OPTION>Odisha</OPTION>
+								<OPTION>Punjab</OPTION>
+								<option>Rajasthan</option>
+								<option>Sikkim</option>
+								<option>Tamil Nadu</OPTION>
+								<OPTION>Telangana</OPTION>
+								<option>Tripura</option>
+								<option>Uttarakhand</option>
+								<option>Uttar Pradesh</OPTION>
+								<OPTION>West Bengal</OPTION>
+								
+							</select></td>
+						</tr>
+						
+						
+						<tr>
+							<td colspan="4">
+								<input type="checkbox"/>I certify that the information,
+								I am about to provided is true and complete to the best 
+								of my knowledge. <br/>I am aware that this self declaration 
+								statement is subject to review and verification and 
+								if such information has <br/>been falsified I may be 
+								terminated from the Housing Choice Voucher program 
+								for fraud and/or perjury. 
+							</td>
+						<tr>
+							<td style="font-size:20px">Comment:</td>
+							<td colspan="3"><textarea cols="70" rows="5"></textarea></td>
+						</tr>
+						<br/><br/>
+						<table align="center">
+							<tr>
+								<td><input type="submit" id="inp1" value="submit"></td>
+								<td><input type="Reset" value="Reset"></td>
+							</tr>
+						</table>
+						
+				</form>
+			</table>
+			<p><a href="computer science.html">Back..</a></p>
+		</body>
+	</html>

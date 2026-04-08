@@ -1,0 +1,79 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>Admission Registration Form</title>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				
+				$("#bdy").delay(500).fadeIn(2000);
+				function srf(){
+				$("#srf").fadeOut(500);
+				$("#srf").fadeIn(500);
+				
+				}
+				setInterval (srf,1000);
+				
+				$("#inp1").click(function(){
+					alert("Successfull Your Registration");
+				});
+				
+			});
+		</script>
+		</head>
+		<body id="bdy" style="display:none">
+			<table cellspacing="10px" align="center" style="border-radius:20px" bgcolor="skyblue">
+				<form autocomplete="on">
+					<center><h1 style="color:red" id="srf">Student Registration Form</h1></center>
+					<tr>
+						<td>Student Full Name:</td>
+						<td><input type="text" placeholder=" First Name" name="First_Name" /></td>
+						
+						<td><input type="text" placeholder=" Middle Name" name="Middle_Name" /></td>
+						<td><input type="text" placeholder=" Last Name" name="Last_Name"/></td>
+						
+						
+					</tr>
+					
+					
+					<tr>
+						<td>Date Of Birth:</td>
+						<td><input type="date"/></td>
+					</tr>
+					
+					<tr>
+						<td>Gender:</td>
+						<td>Male<input type="radio" name="1"></td>
+						<td>Female<input type="radio" name="1"></td>
+						<td>Other<input type="radio" name="1"></td>
+						
+						
+					</tr>
+					
+					<tr>
+						<td>Mobile No.:</td>
+						<td><input type="number" Value="+91 " placeholder=" +91 Mobile Number" min="10"/></td>
+						</tr>
+					
+					
+					
+					<tr>
+						<td>E-mail ID:</td>
+						<td><input type="text" placeholder=" xyz@gmail.com" /></td>
+					</tr>
+					
+					
+							
+						<br><br>
+						<table align="center">
+							<tr>
+								<td><input type="submit" id="inp1" value="submit"></td>
+								<td><input type="Reset" value="Reset"></td>
+							</tr>
+						</table>
+						
+				</form>
+			</table>
+			<p><a href="computer science.html">Back..</a></p>
+		</body>
+	</html>
